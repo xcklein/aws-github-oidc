@@ -8,6 +8,8 @@
     "url": "https://github.com/xcklein/aws-github-oidc"
   },
   "scripts": {
+    "lint": "biome check .",
+    "format": "biome check . --fix",
     "build": "tsc",
     "synth": "cdk synth -c user=dummy-user -c repo=dummy-repo"
   },
@@ -16,12 +18,11 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.3.11",
-    "@types/aws-lambda": "^8.10.159",
+    "@tsconfig/node-ts": "^23.6.2",
     "@types/node": "24.10.7",
     "aws-cdk": "^2.1100.3",
     "cdk-nag": "^2.37.55",
     "constructs": "^10.4.4",
-    "esbuild": "^0.27.2",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   },
