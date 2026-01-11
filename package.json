@@ -1,26 +1,31 @@
 {
-  "name": "aws-github-oicp",
+  "name": "aws-github-oidc",
+  "description": "An example AWS / GitHub OIDC CDK configuration.",
+  "author": "Christian",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xcklein/aws-github-oidc"
+  },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "synth": "cdk synth -c user=dummy-user -c repo=dummy-repo"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.214.0"
+    "aws-cdk-lib": "^2.234.1"
   },
   "devDependencies": {
-    "@eslint/js": "^9.35.0",
-    "@types/aws-lambda": "^8.10.152",
-    "@types/node": "^24.3.1",
-    "aws-cdk": "^2.1029.0",
-    "constructs": "^10.4.2",
-    "esbuild": "^0.25.9",
-    "eslint": "^9.35.0",
-    "prettier": "^3.6.2",
-    "tsx": "^4.20.5",
-    "typescript": "^5.9.2",
-    "typescript-eslint": "^8.42.0"
+    "@biomejs/biome": "^2.3.11",
+    "@types/aws-lambda": "^8.10.159",
+    "@types/node": "24.10.7",
+    "aws-cdk": "^2.1100.3",
+    "cdk-nag": "^2.37.55",
+    "constructs": "^10.4.4",
+    "esbuild": "^0.27.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
   },
   "volta": {
-    "node": "22.19.0"
+    "node": "24.12.0"
   }
 }

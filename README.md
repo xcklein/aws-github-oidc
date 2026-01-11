@@ -1,7 +1,11 @@
-# aws-github-oicp
+# aws-github-oidc
 
-## Example
+Example CDK configuration for a AWS / GitHub OIDC.
 
-```
-npx cdk deploy -c account=123456789012 -c region=us-north-4 -c user=mygithubusername -c repo=my-github-repo-slug
+## Deploy
+
+Here is an example command. This will deploy to the account and region of the current role.
+
+```bash
+pnpx cdk deploy -c user=mygithubusername -c repo=my-github-repo-slug
 ```

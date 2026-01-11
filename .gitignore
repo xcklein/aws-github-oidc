@@ -8,7 +8,6 @@ dist/
 
 # cdk
 cdk.out/
-cdk.context.json
 
 # deps
 node_modules/
